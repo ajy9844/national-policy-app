@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <Button
+        android:id="@+id/region"
+        android:layout_width="217dp"
+        android:layout_height="210dp"
+        android:background="@drawable/button_shape"
+        android:onClick="home_Clicked"
+        android:text="지역별로 공공서비스 보기"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FCCCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <Button
+        android:id="@+id/central"
+        android:layout_width="213dp"
+        android:layout_height="201dp"
+        android:background="@drawable/button_shape"
+        android:onClick="home_Clicked"
+        android:text="중앙부처 공공서비스 보기"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FBDEA2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <Button
+        android:id="@+id/edu"
+        android:layout_width="197dp"
+        android:layout_height="200dp"
+        android:background="@drawable/button_shape"
+        android:onClick="home_Clicked"
+        android:text="국가 보조금 조회"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8EB695"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

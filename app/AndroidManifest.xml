@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.techtown.policy_briefing_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Policy_Briefing_App"
+        android:name="org.techtown.policy_briefing_app.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".search2"
+            android:label="@string/title_activity_search2"
+            android:theme="@style/Theme.Policy_Briefing_App.NoActionBar"></activity>
+        <activity
+            android:name=".result_print"
+            android:label="@string/title_activity_result_print"
+            android:theme="@style/Theme.Policy_Briefing_App.NoActionBar" />
+        <activity android:name=".search" />
+        <activity android:name=".interest" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Policy_Briefing_App.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
